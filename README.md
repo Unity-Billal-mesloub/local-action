@@ -1,13 +1,13 @@
 # Local Action Debugger
 
-![GitHub Super-Linter](https://github.com/github/local-action/actions/workflows/linter.yml/badge.svg)
-![Continuous Integration](https://github.com/github/local-action/actions/workflows/continuous-integration.yml/badge.svg)
+![GitHub Super-Linter](https://github.com/Unity-Billal-mesloub/local-action/actions/workflows/linter.yml/badge.svg)
+![Continuous Integration](https://github.com/Unity-Billal-mesloub/local-action/actions/workflows/continuous-integration.yml/badge.svg)
 ![Code Coverage](badges/coverage.svg)
 
 Run custom GitHub Actions locally and test them in Visual Studio Code!
 
 This command-line tool emulates some **basic** functionality of the
-[GitHub Actions Toolkit](https://github.com/actions/toolkit) so that custom
+[GitHub Actions Toolkit](https://github.com/Unity-Billal-mesloub/toolkit) so that custom
 actions can be run directly on your workstation.
 
 > [!NOTE]
@@ -43,7 +43,7 @@ to use `npm` for managing actions you wish to test with this tool.
 ### `pnpm` Support
 
 This tool ships with **experimental** support for `pnpm`. If you encounter any
-issues, please [file an issue](https://github.com/github/local-action/issues).
+issues, please [file an issue](https://github.com/Unity-Billal-mesloub/local-action/issues).
 
 Some caveats to this support are listed below.
 
@@ -52,7 +52,7 @@ Some caveats to this support are listed below.
 ### `yarn` Support
 
 This tool ships with **experimental** support for `yarn`. If you encounter any
-issues, please [file an issue](https://github.com/github/local-action/issues).
+issues, please [file an issue](https://github.com/Unity-Billal-mesloub/local-action/issues).
 
 Some caveats to this support are listed below.
 
@@ -71,8 +71,8 @@ Some caveats to this support are listed below.
 For JavaScript and TypeScript actions, your code should follow the format of the
 corresponding template repository.
 
-- [`actions/javascript-action`](https://github.com/actions/javascript-action)
-- [`actions/typescript-action`](https://github.com/actions/typescript-action)
+- [`Unity-Billal-mesloub/javascript-action`](https://github.com/Unity-Billal-mesloub/javascript-action)
+- [`Unity-Billal-mesloub/typescript-action`](https://github.com/Unity-Billal-mesloub/typescript-action)
 
 Specifically, there should be a separation between the entrypoint used by GitHub
 Actions when invoking your code, and the actual logic of your action. For
@@ -121,14 +121,12 @@ the following when preparing for release:
   [`@vercel/ncc`](https://www.npmjs.com/package/@vercel/ncc), or
   [`rollup`](https://rollupjs.org/)
 
-**This tool supports non-transpiled action code only.** This is because it uses
-[`quibble`](https://github.com/testdouble/quibble) to override GitHub Actions
-Toolkit dependencies (e.g
+**This tool supports non-transpiled action code only.
 [`@actions/core`](https://www.npmjs.com/package/@actions/core)). In transpiled
 code, this simply doesn't work.
 
 For example, if you have a TypeScript action that follows the same format as the
-[template](https://github.com/actions/typescript-action), you would have both
+[template](https://github.com/Unity-Billal-mesloub/typescript-action), you would have both
 `src` and `dist` directories in your repository. The `dist` directory contains
 the transpiled code with any dependencies included. When running this utility,
 you will want to target the code files in the `src` directory instead (including
@@ -153,7 +151,7 @@ For additional information about transpiled action code, see
 1. Clone this repository locally
 
    ```bash
-   git clone https://github.com/github/local-action.git
+   git clone https://github.com/Unity-Billal-mesloub/local-action.git
    ```
 
 1. Install dependencies

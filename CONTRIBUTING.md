@@ -10,7 +10,6 @@ keep them limited in scope so that they can be more easily reviewed.
 > Check the `engine` property in [`package.json`](./package.json) to see what
 > version of Node.js is required for local development. This can be different
 > from the version of Node.js used on the GitHub Actions runners. Tools like
-> [nodenv](https://github.com/nodenv/nodenv) can be used to manage your Node.js
 > version automatically.
 
 1. Fork this repository
@@ -72,8 +71,8 @@ npm unlink @github/local-action
 After making updates and running the test suite, please also make sure to test
 your updates using the following GitHub Actions repositories:
 
-- [`actions/javascript-action`](https://github.com/actions/javascript-action)
-- [`actions/typescript-action`](https://github.com/actions/typescript-action)
+- [`actions/javascript-action`](https://github.com/Unity-Billal-mesloub/javascript-action)
+- [`actions/typescript-action`](https://github.com/Unity-Billal-mesloub/typescript-action)
 
 1. Clone each repository locally
 1. From your `github/local-action` fork, test each action
@@ -126,7 +125,7 @@ across commits easier.
 
    ```typescript
    /**
-    * Last Reviewed Commit: https://github.com/actions/toolkit/blob/f58042f9cc16bcaa87afaa86c2974a8c771ce1ea/packages/artifact/src/artifact.ts
+    * Last Reviewed Commit: https://github.com/Unity-Billal-mesloub/toolkit/blob/f58042f9cc16bcaa87afaa86c2974a8c771ce1ea/packages/artifact/src/artifact.ts
     * Last Reviewed Date: 2025-09-10
     */
    ```
@@ -136,5 +135,5 @@ sure to compare against the last reviewed commit in the corresponding stub file.
 This can be done more easily using the following URL format:
 
 ```plain
-https://github.com/actions/toolkit/compare/<old commit>..main
+https://github.com/Unity-Billal-mesloub/toolkit/compare/<old commit>..main
 ```
